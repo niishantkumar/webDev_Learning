@@ -4,16 +4,29 @@
     <title>Form</title>
   </head>
   <body>
-    <form action="/action">
+    <form action="/submit">
       <div>
         <label for="username">Enter username : </label>
-        <input type="text" placeholder="username" id="username" />
+        <input
+          type="text"
+          placeholder="username"
+          id="username"
+          name="username"
+        />
       </div>
 
       <div>
         <label for="password">Enter password : </label>
-        <input type="password" placeholder="password" id="password" />
+        <input
+          type="password"
+          placeholder="password"
+          id="password"
+          name="password"
+        />
       </div>
+      <section>
+        <button type="submit">Login</button>
+      </section>
     </form>
   </body>
 </html>
