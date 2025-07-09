@@ -8,20 +8,10 @@
   <body>
     <h1>Registration form</h1>
     <form action="/submit">
-      <input
-        type="text"
-        name="fName"
-        placeholder="First Name"
-        id="fName"
-        required
-      />
-      <input
-        type="text"
-        name="lName"
-        placeholder="Last Name"
-        id="lName"
-        required
-      />
+      <div>
+        <input type="text" name="fName" placeholder="First Name" required />
+        <input type="text" name="lName" placeholder="Last Name" required />
+      </div>
 
       <div>
         <label for="gender">Please select gender</label>
@@ -33,10 +23,13 @@
         </select>
       </div>
 
-      <label for="t&c">Do you agree to all terms of services?</label>
-      <input type="checkbox" name="t&c" id="t&c" value="Yes" checked />
-      Yes, I agree
-      <br />
+      <div>
+        Do you agree to all terms of services?
+       
+        <input type="checkbox" name="t&c" id="t&c" value="Yes" checked />
+         <label for="t&c">Yes, I agree</label>
+        <br />
+      </div>
 
       <button type="submit">Register</button>
     </form>
