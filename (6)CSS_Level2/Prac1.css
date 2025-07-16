@@ -1,0 +1,17 @@
+a {
+  text-decoration: none;
+}
+header {
+  text-align: center;
+}
+
+#Q {
+  text-align: center;
+  color: maroon;
+}
+ul {
+  list-style: none;
+  margin: auto;
+  gap: 10px;
+  display: flex;
+}
