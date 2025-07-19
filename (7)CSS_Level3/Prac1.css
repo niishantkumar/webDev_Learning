@@ -1,0 +1,14 @@
+div{
+    text-align: justify;
+    height: 100px;
+    width: 550px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: aqua;
+
+    border-radius: 10px;
+
+    padding: 50px 10px;
+
+    margin-bottom: 15px;
+}
