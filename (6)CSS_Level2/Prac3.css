@@ -1,0 +1,65 @@
+/*
+🅰️ PART A: Selectors
+Q1. Give the <h1> header a unique ID called "mainTopic" and set its color to blue using the ID selector.
+
+Q2. Align all the text on the page to the center using a universal selector.
+
+Q3. Change the font style of all heading tags (h1 to h6) to 'Georgia'.
+
+Q4. Set the text color of all paragraphs to white and the background color to cornflower blue, without using the element selector p.
+
+Q5. Select all buttons inside a <div> and change their background color to purple and text color to azure.
+
+🅱️ PART B: Pseudo-classes & Pseudo-elements
+
+Q6. Change the button background color to yellow and text color to blue when hovered.
+
+Q7. Change the text color of every odd-numbered paragraph (i.e., Paragraph 1 and 3) to yellow.
+
+Q8. Change the color of the first letter of the <h1> heading to red.
+
+Q9. Set the text color of the checkbox label to dark green when the checkbox is checked.
+
+Q10. Order the following selectors by specificity, from least specific to most specific:
+      * h1
+      * #mainContent
+      * .main-div.main
+*/
+
+#mainTopic {
+  color: blue;
+}
+
+* {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.para{
+    color: white;
+    background-color: cornflowerblue;
+}
+
+div button{
+    color: azure;
+    background-color: purple;
+}
+button:hover{
+    color: blue;
+    background-color: yellow;
+}
+
+p:nth-of-type(2n+1){
+    color: yellow;
+}
+
+h1::first-letter{
+    color: red;
+}
+
+input[type = "checkbox"]:checked + label{
+    color: darkgreen;
+}
