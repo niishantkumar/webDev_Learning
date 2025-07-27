@@ -1,0 +1,24 @@
+.frame {
+  height: 400px;
+  width: 400px;
+  border: 2px solid skyblue;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.element {
+  height: 100px;
+  width: 100px;
+
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: gray;
+  font-size: 50px;
+
+  text-align: center;
+}
