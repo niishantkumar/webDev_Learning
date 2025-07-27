@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blueviolet;
+}
+
+#container {
+  width: 350px;
+  background-color: rgb(255, 235, 220);
+  margin: 25% auto;
+  border: 1px solid red;
+  border-radius: 8px;
+  box-shadow: 0px 0px 12px rgb(235, 0, 0);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+#Aqua {
+  height: 50px;
+  width: 150px;
+  margin: 20px auto 10px auto;
+  font-size: 38px;
+  text-align: center;
+  line-height: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  transform: skew(5deg);
+
+  text-shadow: 0px 0px 12px gray;
+}
+
+#form {
+  width: 250px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#form input {
+  width: 100%;
+  margin: 5px auto;
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 5px;
+  border-color: #005fa3;
+}
+
+#form button {
+  width: 100%;
+  margin: 8px auto;
+  padding: 10px;
+  font-size: 1em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 10px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#form button:hover {
+  background-color: #005fa3;
+}
+
+hr {
+  width: 30%;
+  margin: 10px auto;
+  border: none;
+  border-top: 2px solid #444;
+}
+
+#signup {
+  margin: 25px auto 20px auto;
+}
+
+#signup a {
+  text-decoration: none;
+  font-weight: bolder;
+}
