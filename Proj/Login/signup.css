@@ -1,5 +1,101 @@
-html, body{
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+#container {
+  height: auto;
+  width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(255, 235, 220);
+  border-color: white;
+  margin: 20px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+#msg {
+  font-size: medium;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #444;
+}
+
+#aqua {
+  height: 50px;
+  width: 150px;
+  margin: 20px auto 10px auto;
+  font-size: 38px;
+  text-align: center;
+  line-height: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  transform: skew(5deg);
+
+  text-shadow: 0px 0px 12px gray;
+}
+
+#container hr {
+  width: 80%;
+  border: none;
+  border-top: 2px solid #444;
+  margin: 20px auto 25px auto;
+}
+
+#form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 2px auto;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  gap: 10px;
+}
+
+#form input {
+  height: 40px;
+  width: 100%;
+  margin: 0px auto 2px auto;
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 5px;
+  border-color: #005fa3;
+}
+
+#form button {
+  height: 40px;
+  width: 100%;
+  margin: 0px auto 20px auto;
+  padding: 10px;
+  font-size: 1em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 10px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#form button:hover {
+  background-color: #005fa3;
+}
+
+footer {
+  margin-top: 35%;
+  color: white;
+  text-align: center;
 }
