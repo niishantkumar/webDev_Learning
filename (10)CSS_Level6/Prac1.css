@@ -1,0 +1,18 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.box {
+    height: 200px;
+    width: 300px;
+    background-color: cadetblue;
+   
+  animation: fadeInUp 3s ease-out 0s 5 forwards;
+}
