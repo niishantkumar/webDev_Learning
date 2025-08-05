@@ -9,10 +9,25 @@
   }
 }
 
-.box {
-    height: 200px;
-    width: 300px;
-    background-color: cadetblue;
-   
+.box1 {
+  height: 200px;
+  width: 300px;
+  background-color: cadetblue;
+  display: inline-block;
+
   animation: fadeInUp 3s ease-out 0s 5 forwards;
+}
+
+@keyframes bounce{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(50px);}
+    100% {transform: translateY(0);}
+}
+
+.box2{
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    background-color: aqua;
+    animation: bounce 1s ease-out 0s 5 forwards;
 }
