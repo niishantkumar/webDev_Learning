@@ -4,20 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login/Signup</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="main_box">
       <input type="checkbox" id="check" />
+      <img src="bgPhoto.png" alt="post" id="post" />
       <div class="container1">
+        <div id="logo">Roamgram</div>
         <form action="#">
-          <div>Roamgram</div>
           <div class="login">
             <input type="text" name="name" placeholder="username" required />
             <input
@@ -26,15 +21,19 @@
               placeholder="password"
               required
             />
+            <button type="submit">Login</button>
           </div>
         </form>
-        <button type="submit">Login</button>
-        <hr />
-        OR
-        <hr />
-        <a href="#">Forgot password?</a>
+        <div class="signup">
+          <div class="or">
+            <hr />
+            <span>or</span>
+            
+            <hr />
+          </div>
 
-        <div>Don't have an account? <label for="check">Sign up</label></div>
+          <div>Don't have an account? <label for="check">Sign up</label></div>
+        </div>
       </div>
     </div>
   </body>
