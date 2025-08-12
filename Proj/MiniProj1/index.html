@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login/Signup</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="main_box">
       <input type="checkbox" id="check" />
       <img src="bgPhoto.png" alt="post" id="post" />
+
+      <!--Login-->
       <div class="container1">
-        <div id="logo">Roamgram</div>
+        <div class="logo">Roamgram</div>
         <form action="#">
           <div class="login">
             <input type="text" name="name" placeholder="username" required />
@@ -28,13 +35,60 @@
           <div class="or">
             <hr />
             <span>or</span>
-            
+
             <hr />
           </div>
 
-          <div>Don't have an account? <label for="check">Sign up</label></div>
+          <div>
+            Don't have an account? &nbsp;
+            <label for="check"
+              ><span class="material-symbols-outlined" id="icon">
+                how_to_reg
+              </span></label
+            >
+          </div>
         </div>
       </div>
+
+      <!--Signup-->
+      <div class="container2">
+        <div class="logo">Roamgram</div>
+        <div class="message">
+          <span>Hey Roamers!<br />Sign up to post and discover &#128248;</span>
+        </div>
+        <form action="#">
+          <div class="signup2">
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="name" placeholder="Full name" required />
+            <input type="text" name="uname" placeholder="Username" required />
+            <input
+              type="password"
+              name="pass"
+              placeholder="Password"
+              required
+            />
+
+            <button type="submit">Sign up</button>
+          </div>
+        </form>
+
+        <div class="or">
+          <hr />
+          <span>or</span>
+          <hr />
+        </div>
+
+        <div class="loginOption">
+          Have an account? &nbsp;
+          <label for="check"
+            ><span class="material-symbols-outlined" id="icon">
+              login
+            </span></label
+          >
+        </div>
+      </div>
+
+      <footer>&copy; 2025 Roamgram (nishant)</footer>
     </div>
   </body>
 </html>
