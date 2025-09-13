@@ -37,3 +37,24 @@ console.log(str1.slice(-2));
 //slice
 console.log(str1.replace("Love", "Do"));
 console.log(str1.replace("o", "x"));
+
+//-------Array
+
+let arr = ['Hulk', 'Thor', 'Loki'];
+console.log(arr);
+arr[10] = 'nish'
+console.log(arr);
+
+
+//-------Array methods
+
+let cars = ['ford', 'toyota', 'tata'];
+console.log(cars);
+cars.pop(); //will return tata
+console.log(cars);
+cars.push('vw');
+console.log(cars);
+cars.shift();
+console.log(cars);
+cars.unshift('mahindra');
+console.log(cars);
