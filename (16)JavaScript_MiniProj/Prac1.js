@@ -22,4 +22,4 @@ ul.addEventListener("click", function (event) {
         let listItem = event.target.parentElement;
         listItem.remove();
     }
-})
+});
