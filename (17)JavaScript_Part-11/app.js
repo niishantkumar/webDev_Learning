@@ -30,8 +30,6 @@ isSuccess(
             () => {
                 console.log("Data insertion failed")
             }
-
-
         );
     },
 
@@ -40,3 +38,28 @@ isSuccess(
     }
 
 );
+
+
+//Promise
+function insertToDb(data) {
+    return new Promise((resolve, reject) => {
+        let internetSpeed = Math.floor(Math.random * 10) + 1;
+
+        if (internetSpeed > 4) {
+            resolve("Success : data was saved");
+        } else {
+            reject("Failure: weak connection");
+        }
+
+    }
+    );
+}
+
+let request = insertToDb("Hello");
+request
+    .then(() => {
+        console.log("Promise resolved");
+    })
+    .catch(() => {
+        console.log("Promise rejected");
+    });
