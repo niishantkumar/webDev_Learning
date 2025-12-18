@@ -65,31 +65,59 @@
 //     });
 
 
-function changeColor(color, delay) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const h1 = document.querySelector("h1");
+// function changeColor(color, delay) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const h1 = document.querySelector("h1");
 
-            if (h1) {
-                h1.style.color = color;
-                resolve("Color changed to " + color);
-            } else {
-                reject("h1 element not found");
-            }
-        }, delay);
+//             if (h1) {
+//                 h1.style.color = color;
+//                 resolve("Color changed to " + color);
+//             } else {
+//                 reject("h1 element not found");
+//             }
+//         }, delay);
+//     });
+// }
+
+
+// changeColor("red", 2000)
+//     .then((result) => {
+//         console.log(result);
+
+//         return changeColor("blue", 2000);
+//     })
+//     .then((result) => {
+//         console.log(result);
+//     })
+//     .catch((error) => {
+//         console.log(error);
+//     });
+
+
+// async function colorCha() {
+//     await changeColor("red", 1000);
+//     await changeColor("blue", 1000);
+//     await changeColor("green", 1000);
+//     changeColor("orange", 1000);
+// }
+
+function func() {
+    return new Promise((resolve, reject) => {
+        let num = Math.floor(Math.random() * 10) + 1;
+
+        if (num > 4) {
+            console.log("Hello")
+            resolve("Passed");
+        }
+        reject("Failed");
     });
 }
 
+async function check() {
+    await func();
+    await func();
+    await func();
 
-changeColor("red", 2000)
-    .then((result) => {
-        console.log(result);
-
-        return changeColor("blue", 2000);
-    })
-    .then((result) => {
-        console.log(result);
-    })
-    .catch((error) => {
-        console.log(error);
-    });
+    console.log("Rejection handled");
+}
